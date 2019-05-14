@@ -1,0 +1,14 @@
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\SysAcademico\SysAcademico\bin\Debug\SysAcademico.exe.config
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\SysAcademico\SysAcademico\bin\Debug\SysAcademico.exe
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\SysAcademico\SysAcademico\bin\Debug\SysAcademico.pdb
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\SysAcademico\SysAcademico\obj\Debug\SysAcademico.csprojAssemblyReference.cache
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\SysAcademico\SysAcademico\obj\Debug\SysAcademico.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\SysAcademico\SysAcademico\obj\Debug\SysAcademico.exe
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\SysAcademico\SysAcademico\obj\Debug\SysAcademico.pdb
+C:\C O N S O L A\SysAcademico\SysAcademico\bin\Debug\SysAcademico.exe.config
+C:\C O N S O L A\SysAcademico\SysAcademico\bin\Debug\SysAcademico.exe
+C:\C O N S O L A\SysAcademico\SysAcademico\bin\Debug\SysAcademico.pdb
+C:\C O N S O L A\SysAcademico\SysAcademico\obj\Debug\SysAcademico.csprojAssemblyReference.cache
+C:\C O N S O L A\SysAcademico\SysAcademico\obj\Debug\SysAcademico.csproj.CoreCompileInputs.cache
+C:\C O N S O L A\SysAcademico\SysAcademico\obj\Debug\SysAcademico.exe
+C:\C O N S O L A\SysAcademico\SysAcademico\obj\Debug\SysAcademico.pdb
