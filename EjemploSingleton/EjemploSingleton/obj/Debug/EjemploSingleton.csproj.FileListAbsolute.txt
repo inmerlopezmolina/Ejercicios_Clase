@@ -1,0 +1,7 @@
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\EjemploSingleton\EjemploSingleton\bin\Debug\EjemploSingleton.exe.config
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\EjemploSingleton\EjemploSingleton\bin\Debug\EjemploSingleton.exe
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\EjemploSingleton\EjemploSingleton\bin\Debug\EjemploSingleton.pdb
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\EjemploSingleton\EjemploSingleton\obj\Debug\EjemploSingleton.csprojAssemblyReference.cache
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\EjemploSingleton\EjemploSingleton\obj\Debug\EjemploSingleton.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\EjemploSingleton\EjemploSingleton\obj\Debug\EjemploSingleton.exe
+C:\Users\HP\Documents\DESAROLLO\C#_Xamarin\EjemploSingleton\EjemploSingleton\obj\Debug\EjemploSingleton.pdb
