@@ -1,66 +1,73 @@
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
+
 class Solution
 {
 
-    // Complete the appendAndDelete function below.
-    static string appendAndDelete(string s, string t, int k)
+    // Complete the largestPermutation function below.
+    static int[] largestPermutation(int k, int[] arr)
     {
-
-
-
-        if (s.Equals(t))
+        var len = arr.Length;
+        var max = len;
+        var dicArr = new Dictionary<int, int>();
+        for (var i = 0; i < arr.Length; i++)
         {
-           
-            return (k > s.Length * 2 || k % 2 == 0) ? "Yes" : "No";
+            dicArr[arr[i]] = i;
         }
-
-        else
+        var continues = 0;
+        for (var i = 0; i < Math.Min(k, len) + continues && i < len; i++)
         {
-            int carecterescoinciden = 0;
-
-            for (int i = 0; i < Math.Min(s.Length, t.Length); i++)
+            if (arr[i] == max - i)
             {
-                if (s[i] != t[i])
-                {
-                    break;
-                }
-                carecterescoinciden++;
+                continues++;
+                continue;
             }
-
-            int nonMatchingCharactersInS = s.Length - carecterescoinciden;
-            int nonMatchingCharactersInT = t.Length - carecterescoinciden;
-
-            int nmcS = nonMatchingCharactersInS;
-            int nmcT = nonMatchingCharactersInT;
-
-            bool condicionA = nmcS + nmcT == k;
-            bool condicionB = (nmcS + nmcT < k && (nmcS + nmcT - k) % 2 == 0);
-            bool condicionC = s.Length + t.Length <= k;
-
-            return  (condicionA || condicionB || condicionC) ? "Yes" : "No";
-
-
+            var buff = arr[i];
+            arr[i] = max - i;
+            arr[dicArr[arr[i]]] = buff;
+            dicArr[buff] = dicArr[arr[i]];
         }
+        return arr;
+        //var mini = arr.Max();
+        //for (int i = 0; i < arr.Length; i++)
+        //{
+
+        //Math.Min(k, len) + continues && i
+
+        //}
 
     }
 
     static void Main(string[] args)
     {
-        //TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+       // TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
-        string s = Console.ReadLine();
+        string[] nk = Console.ReadLine().Split(' ');
 
-        string t = Console.ReadLine();
+        int n = Convert.ToInt32(nk[0]);
 
-        int k = Convert.ToInt32(Console.ReadLine());
+        int k = Convert.ToInt32(nk[1]);
 
-        string result = appendAndDelete(s, t, k);
+        int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp))
+        ;
+        int[] result = largestPermutation(k, arr);
 
-        //textWriter.WriteLine(result);
+        Console.WriteLine(string.Join(" ", result));
 
-        Console.WriteLine(result);
+        //   textWriter.Flush();
+        //   textWriter.Close();
         Console.ReadKey();
     }
-
-    // textWriter.Flush();
-    //textWriter.Close();
 }
+
